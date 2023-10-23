@@ -1,0 +1,418 @@
+
+
+
+<!--
+=========================================================
+* Material Dashboard 2 - v3.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logobanksampah.png">
+<link rel="icon" type="image/png" href="./assets/img/logobanksampah.png">
+
+<title>  
+   Bank Sampah
+</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGEs7NCp4jR68cLkaT3tk5eYjofLwC5g3JWqBs7A3+2VPmHf5OyW5U02" crossorigin="anonymous">
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw9f+8aE5XVQvcl6sp7g4b6fqzjxeerPXLzAA6Uo7CtOCyp25paa0zDE7yfWMn" crossorigin="anonymous"></script>
+
+
+<!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+<!-- Nucleo Icons -->
+<link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+<link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<!-- Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<!-- CSS Files -->
+
+<link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
+
+<!-- Nepcha Analytics (nepcha.com) -->
+<!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+<script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+
+<aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3" id="sidenav-main">
+
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+      <img src="./assets/img/logobanksampah.png" class="navbar-brand-img h-100" alt="main_logo">
+      <span class="ms-1 font-weight-bold text-white">Bank Sampah</span>
+    </a>
+  </div>
+
+  <hr class="horizontal light mt-0 mb-2">
+
+  <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+    <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="nav-link text-white " href="./index.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">calculate</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Kalkulator</span>
+  </a>
+</li>
+
+<hr class="horizontal light mt-0 mb-2">
+
+<li class="nav-item mt-3">
+  <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Laporan
+  </h6>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link text-white " href="./pages/laporan_transaksi.html">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">equalizer</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Laporan Transaksi</span>
+  </a>
+</li>
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="#">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">equalizer</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Laporan Kategori</span>
+  </a>
+</li>
+  
+<li class="nav-item">
+  <a class="nav-link text-white " href="#">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">equalizer</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Laporan Sub-Kategori</span>
+  </a>
+</li>
+
+<hr class="horizontal light mt-0 mb-2">
+
+<li class="nav-item">
+  <a class="nav-link text-white " href="logout.php">
+    
+      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+        <i class="material-icons opacity-10">logout</i>
+      </div>
+    
+    <span class="nav-link-text ms-1">Logout</span>
+  </a>
+</li>
+</aside>
+
+<main class="main-content border-radius-lg ">
+        <!-- Navbar -->
+
+<nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+  <div class="container-fluid py-1 px-3">
+    <nav aria-label="breadcrumb">
+        
+      <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Halaman</a></li>
+        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Kalkulator</li>
+      </ol>
+      <h6 class="font-weight-bolder mb-0">Kalkulator</h6>
+        
+    </nav>
+  
+    <ul class="navbar-nav  justify-content-end">
+      <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+        <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+          <div class="sidenav-toggler-inner">
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+            <i class="sidenav-toggler-line"></i>
+          </div>
+        </a>
+      </li>
+
+  <li class="nav-item d-flex align-items-center">
+          <a href="#" class="nav-link text-body font-weight-bold px-0" id="userProfile">
+            <i class="fa fa-user me-sm-1"></i>
+            
+            <span class="d-sm-inline d-none">Sign In</span>
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- End Navbar -->
+
+<nav class="second-navbar" data-bs-scroll="true">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <!-- Tombol Toggle Menu -->
+        <button type="button" id="sidebarCollapse" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+          <i class="material-icons opacity-10">format_list_bulleted</i>
+        </button>               
+      </div>
+      <div class="col-10">
+        <div class="second-navbar-title">
+          <h3 class="text-white">Kalkulator</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var myOffcanvas = new bootstrap.Offcanvas(document.getElementById("sidenav-main"));
+    var sidebarCollapse = document.getElementById("sidebarCollapse");
+
+    sidebarCollapse.addEventListener("click", function () {
+      myOffcanvas.toggle();
+    });
+  });
+</script>
+
+<!-- Content -->
+<form>
+  <div>
+      <label for="nama_bank">Nama Bank Sampah</label>
+      <input type="text" id="nama_bank" name="nama_bank" placeholder="Umaseka..." required>
+  </div>
+  <div>
+      <label for="nama_petugas">Nama Petugas</label>
+      <input type="text" id="nama_petugas" name="nama_petugas" placeholder="People..." required>
+  </div>
+  <div class="drop-nasabah">
+    <label for="#" class="form-label">Nama Nasabah</label>
+    <select id="#" class="form-select" required>
+      <option value="#">Shiro...</option>
+      <option value="#">one</option>
+      <option value="#">two</option>
+      <option value="#">three</option>
+    </select>
+  </div>
+  <div>
+      <label for="tanggal">Tanggal</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+  </div>
+</form>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div id="globe" class="position-absolute end-0 top-10 mt-sm-3 mt-7 me-lg-7">
+      <canvas width="700" height="600" class="w-lg-100 h-lg-100 w-75 h-75 me-lg-0 me-n10 mt-lg-5"></canvas>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="judul" style="margin-top: 15px;">
+  <h5>Masukkan Data Sampah</h5>
+  </div>
+    <div id="card-container" class="card-container">
+      <div class="card custom-card custom-rounded" style="width: 18rem;">
+        <div class="card-body">
+          <div class="drop-kategori">
+            <label for="kategoriDropdown" class="form-label text-white">Kategori</label>
+            <select id="kategoriDropdown" class="form-select" required>
+              <option value="kategori1">Plastik RIGID/Berbentuk</option>
+              <option value="kategori2">Gelasan</option>
+              <option value="kategori3">Plastik Fleksibel atau Lembaran</option>
+              <option value="kategori4">Plastik Kerasan</option>
+              <option value="kategori5">Kertas</option>
+              <option value="kategori6">Logam</option>
+              <option value="kategori7">Kaca</option>
+              <option value="kategori8">PET</option>
+              <option value="kategori9">Lainnya</option>
+            </select>
+          </div>
+          <div class="drop-subkategori">
+            <label for="subkategoriDropdown" class="form-label text-white">Sub-Kategori</label>
+            <select id="subkategoriDropdown" class="form-select" required>
+              <option value="option1">Sub-Kategori Sampah...</option>
+            </select>
+          </div>
+          <div class="form-total">
+            <label for="form_total" class="form-label text-white">Total Jumlah</label>
+            <input type="number" class="form-control" id="form_total" required>
+          </div>
+        </div>
+      </div>
+    </div> 
+  <div class="button-container">
+    <button class="btn custom-danger minus-button" onclick="kurangCard()">-</button>
+    <button class="btn custom-primary plus-button" onclick="tambahCard()">+</button>
+  </div>
+  <div class="button-submit">
+    <button class="btn custom-button clear-button" onclick="">Bersihkan</button>
+    <button class="btn custom-button send-button" onclick="">Kirim</button>
+  </div>
+<script>
+  let jumlahCard = 1;
+
+  function tambahCard() {
+    // Ambil card terakhir yang ada
+    const cardTerakhir = document.querySelector("#card-container .card:last-child");
+    
+    if (cardTerakhir) {
+      const cardContainer = document.getElementById("card-container");
+      
+      // Salin card terakhir dan masukkan ke dalam card baru
+      const newCard = cardTerakhir.cloneNode(true);
+      newCard.style.display = "block";
+      newCard.id = "card-" + jumlahCard;
+
+      // Perbarui class untuk elemen select, input, dan label dalam card baru
+      const kategoriDropdown = newCard.querySelector("#kategoriDropdown");
+      const subkategoriDropdown = newCard.querySelector("#subkategoriDropdown");
+      const formTotal = newCard.querySelector("#form_total");
+
+      // ... Isi card sesuai kebutuhan
+
+      // Sisipkan card baru ke dalam container
+      cardContainer.appendChild(newCard);
+      jumlahCard++;
+    }
+  }
+
+  function kurangCard() {
+    if (jumlahCard > 1) {
+      const cardId = "card-" + (jumlahCard - 1);
+      const cardToRemove = document.getElementById(cardId);
+      cardToRemove.remove();
+      jumlahCard--;
+    }
+  }
+
+  // Data kategori dan sub-kategori dalam format JSON
+  const dataSubKategori = {
+    kategori1: ["Jerigen warna / bening tapi mangkak", "Tutup PET (HDPE)", "Tutup Galon (LDPE)",
+      "Tutup Campur", "PP Emberan Campur", "PP Emberan Warna", "PP Emberan Hitam",
+      "PC Galon UTUH / BIJI", "PC Galon PECAH / KG"],
+    kategori2: ["Aqua Gelas Kotor", "Aqua Gelas Bersih", "Mountea/Sablon"],
+    kategori3: ["Plastik Bening PE & PP", "HD Kresek", "Kresek Campur", "LLDPE Pouch", "PP Sablon lembaran",
+      "Multi Layer"],
+    kategori4: ["Kerasan / PS / ABS", "PVC"],
+    kategori5: ["Buku Tulis/Buku Pelajaran", "HVS", "Kertas Buram/LKS/Warna", "Majalah", "Koran", "Duplek",
+      "Kardus", "Kertas Campur"],
+    kategori6: ["Besi Kaleng (Omplong)", "Besi B (Tipis)", "Besi A (Tebal & Padat)", "Seng / Paku",
+      "Alumunium Kaleng/tipis", "Alumunium Tebal", "Tembaga", "Logam campur"],
+    kategori7: ["Botol Bir Bintang Besar/biji", "Botol Kaca Campur"],
+    kategori8: ["Rongsok Campur", "PET KW 2", "PET Bersih Bening", "PET Bersih Biru Muda",
+      "PET Bersih Warna", "PET Bersih Campur"],
+    kategori9: ["Jerigen Bening bersih / Jerigen minyak", "Net & PE Foam", "Tetra Pack", "Accu/kg",
+      "Minyak Jelantah", "Sponge/Sepatu/Sandal Bekas", "Tray Telur", "Yakult", "Kelapa Daksina",
+      "Kulit Kabel", "Boncos", "Krat"]
+  };
+
+  const kategoriDropdown = document.getElementById("kategoriDropdown");
+  const subkategoriDropdown = document.getElementById("subkategoriDropdown");
+
+  // Fungsi untuk mengisi dropdown sub-kategori sesuai dengan kategori yang dipilih
+  function isiSubKategori() {
+    const kategori = kategoriDropdown.value;
+    const subkategoriData = dataSubKategori[kategori] || [];
+
+    // Kosongkan dropdown sub-kategori
+    subkategoriDropdown.innerHTML = "";
+
+    // Tambahkan opsi sub-kategori
+    for (let subkategori of subkategoriData) {
+      const option = document.createElement("option");
+      option.value = subkategori;
+      option.textContent = subkategori;
+      subkategoriDropdown.appendChild(option);
+    }
+  }
+
+  // Menjalankan fungsi isiSubKategori saat kategori berubah
+  kategoriDropdown.addEventListener("change", isiSubKategori);
+</script>
+
+<!-- Template untuk card yang tersembunyi -->
+<div id="card-template" style="display: none;">
+  <div class="card custom-card text-white custom-rounded" style="width: 18rem;">
+    <div class="card-body">
+      <div class="drop-kategori">
+        <label for="kategoriDropdown" class="form-label">Kategori</label>
+        <select class="form-select kategoriDropdown">
+          <!-- Options untuk kategori -->
+        </select>
+      </div>
+      <div class="drop-subkategori">
+        <label for="subkategoriDropdown" class="form-label">Sub-Kategori</label>
+        <select class="form-select subkategoriDropdown">
+          <option value="option1">Sub-Kategori Sampah...</option>
+        </select>
+      </div>
+      <div class="form-total">
+        <label for="form_total" class="form-label">Total Jumlah</label>
+        <input type="number" class="form-control form_total">
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+<!--   Core JS Files   -->
+<script src="./assets/js/core/popper.min.js" ></script>
+<script src="./assets/js/core/bootstrap.min.js" ></script>
+<!-- Bootstrap JavaScript -->
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw9f+8aE5XVQvcl6sp7g4b6fqzjxeerPXLzAA6Uo7CtOCyp25paa0zDE7yfWMn" crossorigin="anonymous"></script>
+<script src="./assets/js/plugins/perfect-scrollbar.min.js" ></script>
+<script src="./assets/js/plugins/smooth-scrollbar.min.js" ></script>
+<script>
+  var win = navigator.platform.indexOf('Win') > -1;
+  if (win && document.querySelector('#sidenav-scrollbar')) {
+    var options = {
+      damping: '0.5'
+    }
+    Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+  }
+</script>
+
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc --><script src="./assets/js/material-dashboard.min.js?v=3.1.0"></script>
+  </body>
+
+</html>
