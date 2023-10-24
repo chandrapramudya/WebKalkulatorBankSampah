@@ -30,12 +30,6 @@
    Bank Sampah
 </title>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGEs7NCp4jR68cLkaT3tk5eYjofLwC5g3JWqBs7A3+2VPmHf5OyW5U02" crossorigin="anonymous">
-<!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw9f+8aE5XVQvcl6sp7g4b6fqzjxeerPXLzAA6Uo7CtOCyp25paa0zDE7yfWMn" crossorigin="anonymous"></script>
-
-
 <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
 
@@ -128,7 +122,7 @@
 <hr class="horizontal light mt-0 mb-2">
 
 <li class="nav-item">
-  <a class="nav-link text-white " href="logout.php">
+  <a class="nav-link text-white " href="./php/logout.php">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">logout</i>
@@ -183,12 +177,6 @@
 <nav class="second-navbar" data-bs-scroll="true">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-2">
-        <!-- Tombol Toggle Menu -->
-        <button type="button" id="sidebarCollapse" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
-          <i class="material-icons opacity-10">format_list_bulleted</i>
-        </button>               
-      </div>
       <div class="col-10">
         <div class="second-navbar-title">
           <h3 class="text-white">Kalkulator</h3>
@@ -197,16 +185,6 @@
     </div>
   </div>
 </nav>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var myOffcanvas = new bootstrap.Offcanvas(document.getElementById("sidenav-main"));
-    var sidebarCollapse = document.getElementById("sidebarCollapse");
-
-    sidebarCollapse.addEventListener("click", function () {
-      myOffcanvas.toggle();
-    });
-  });
-</script>
 
 <!-- Content -->
 <form>
@@ -395,7 +373,6 @@
 <script src="./assets/js/core/bootstrap.min.js" ></script>
 <!-- Bootstrap JavaScript -->
 <!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw9f+8aE5XVQvcl6sp7g4b6fqzjxeerPXLzAA6Uo7CtOCyp25paa0zDE7yfWMn" crossorigin="anonymous"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js" ></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js" ></script>
 <script>
@@ -412,7 +389,7 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 
-<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc --><script src="./assets/js/material-dashboard.min.js?v=3.1.0"></script>
+<!-- Control  nter for Material Dashboard: parallax effects, scripts for the example pages etc --><script src="./assets/js/material-dashboard.min.js?v=3.1.0"></script>
   </body>
 
 </html>

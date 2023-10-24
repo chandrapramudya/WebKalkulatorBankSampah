@@ -27651,6 +27651,10 @@ pre[class*="language-"] {
   border-radius: 15px;
 }
 
+.second-navbar-title{
+  margin-left: 90px;
+}
+
 #strip-divider{
   margin-left: -5px;
   margin-right: -5px;
@@ -27660,13 +27664,9 @@ pre[class*="language-"] {
   margin-left: 5px;
 }
 
-#btn-cetak{
+.btn-cetak{
   margin-top: 35px;
   margin-right: 20px;
-}
-
-.col-2{
-  margin-top: 15px;
 }
 
 .col-10{
@@ -27771,13 +27771,14 @@ input[type="number"] {
 }
 
 .button-submit {
+  justify-content: flex-end;
   margin-top: 10px;
-  margin-left: 90px;
+  margin-right: 30px;
   border-radius: 30px;
 }
 
 .custom-button {
-  width: 110px;
+  width: 150px;
   height: auto;
   text-align: center;
 }
@@ -27800,70 +27801,61 @@ input[type="number"] {
   }
 
   #userProfile{
-    margin-left: 205px;
+    display: flex-end;
   }
 
   #iconNavbarSidenav{
-    margin-left: -20px;
+    margin-right: 10px;
   }
 
   .second-navbar{
-    display: none;
+    display: flex;
   }
 
+  .second-navbar-title{
+    margin-left: 90px;
+  }
+
+  /*Menu Laporan Transaksi*/
   #label-periode{
-    margin-bottom: -20px;
     margin-left: -14px;
   }
 
   #date-picker-kiri{
     margin-left: 10px;
-    width: 145%;
+    width: 200px;
   }
 
   #strip-divider{
     margin-top: -10px;
-    margin-left: 130px;
+    margin-left: 200px;
     margin-bottom: -10px;
   }
 
   #date-picker-kanan{
-    margin-left: 10px;
-    width: 145%;
+    margin-left: 100px;
+    width: 200px;
   }
 
-  #btn-navbar{
-    display: flex;
-    margin-left: 15px;
-  }
-
-  #btn-navbar .btn-secondary{
-    margin-left: 15px;
-  }
-
-  #btn-cetak{
-    margin-top: 300px;
+  .btn-cetak{
+    width: 100%;
+    margin-top: 250px;
     margin-left: -100px;
   }
 
+  #btn-navbar{
+    margin-left: 95px;
+  }
+
+  /*End of Menu Laporan Transaksi*/
+
+  /*Menu Kalkulator*/
   .card-container {
     width: 88%;
   }
 
-  .button-container, .button-submit {
-    display: flex;
-    margin-top: 10px;
-    margin-left: 30px;
-  }
-
-  .button-container{
+  .button-container .button-submit{
     justify-content: flex-end;
-    margin-right: 15px;
-  }
-
-  .button-submit{
-    width: 300px;
-    margin-left: 40px;
   }
 
   .plus-button, .minus-button {
@@ -27872,6 +27864,15 @@ input[type="number"] {
     border-radius: 50%; /* Mengatur bentuk lingkaran */
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Aturan CSS khusus untuk tablet dalam mode landscape */
+
+  #iconNavbarSidenav{
+    margin-right: 10px;
+  }
+}
+
 
 
 
