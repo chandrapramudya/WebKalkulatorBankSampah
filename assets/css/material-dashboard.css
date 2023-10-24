@@ -27873,7 +27873,70 @@ input[type="number"] {
   }
 }
 
+/*new */
 
+.btn-cek{
+  width: 200px;
+}
+
+.btn-container {
+  margin-top: 30px;
+  margin: 17px;
+}
+
+
+.orange-button {
+  height: 40px;
+  background-color: #D66627;
+  /* Warna latar belakang */
+  color: #fff;
+  /* Warna teks */
+  border: none;
+  /* Hapus border */
+  border-radius: 5px;
+  /* Tambahkan sudut bulat jika diinginkan */
+}
+
+.green-button {
+  height: 40px;
+  background-color: #0E8B57;
+  /* Warna latar belakang */
+  color: #fff;
+  /* Warna teks */
+  border: none;
+  /* Hapus border */
+  border-radius: 5px;
+  /* Tambahkan sudut bulat jika diinginkan */
+  margin-top: 10px;
+}
+
+.table-struk{
+  font-size: 14px; 
+  width: 330px; 
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.data-umum{
+  width: 100px; 
+  color: black; 
+  font-weight: bold; 
+  vertical-align: top
+}
+
+.isi-umum{
+  width: 100px; 
+  color: black; 
+  vertical-align: top
+}
+
+.dashed-line {
+  border-top: 1px dashed #000; /* Ganti warna dan ketebalan sesuai kebutuhan */
+  margin: 2px 0; /* Atur jarak di atas dan bawah garis */
+  width: 330px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 
 /*# sourceMappingURL=dashboard-free.css.map */
