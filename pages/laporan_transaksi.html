@@ -54,61 +54,61 @@
   
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
-  <li class="nav-item">
-    <a class="nav-link text-white " href="../index.html">
-      
-        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="material-icons opacity-10">calculate</i>
-        </div>
-      
-      <span class="nav-link-text ms-1">Kalkulator</span>
-    </a>
-  </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../index.html">
+        
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">calculate</i>
+              </div>
+            
+            <span class="nav-link-text ms-1">Kalkulator</span>
+          </a>
+        </li>
+        
+        <hr class="horizontal light mt-0 mb-2">
+        
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Laporan
+          </h6>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-white active" href="./laporan_transaksi.html">
+            
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">equalizer</i>
+              </div>
+            
+            <span class="nav-link-text ms-1">Laporan Transaksi</span>
+          </a>
+        </li>
+          
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./laporan_kategori.html">
+            
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">equalizer</i>
+              </div>
+            
+            <span class="nav-link-text ms-1">Laporan Kategori</span>
+          </a>
+        </li>
+          
+        <li class="nav-item">
+          <a class="nav-link text-white" href="./laporan_subkategori.html">
+            
+              <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i class="material-icons opacity-10">equalizer</i>
+              </div>
+            
+            <span class="nav-link-text ms-1">Laporan Sub-Kategori</span>
+          </a>
+        </li>
   
   <hr class="horizontal light mt-0 mb-2">
   
-  <li class="nav-item mt-3">
-    <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Laporan
-    </h6>
-  </li>
-  
   <li class="nav-item">
-    <a class="nav-link text-white " href="./laporan_transaksi.html">
-      
-        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="material-icons opacity-10">equalizer</i>
-        </div>
-      
-      <span class="nav-link-text ms-1">Laporan Transaksi</span>
-    </a>
-  </li>
-    
-  <li class="nav-item">
-    <a class="nav-link text-white " href="#">
-      
-        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="material-icons opacity-10">equalizer</i>
-        </div>
-      
-      <span class="nav-link-text ms-1">Laporan Kategori</span>
-    </a>
-  </li>
-    
-  <li class="nav-item">
-    <a class="nav-link text-white " href="#">
-      
-        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-          <i class="material-icons opacity-10">equalizer</i>
-        </div>
-      
-      <span class="nav-link-text ms-1">Laporan Sub-Kategori</span>
-    </a>
-  </li>
-  
-  <hr class="horizontal light mt-0 mb-2">
-  
-  <li class="nav-item">
-    <a class="nav-link text-white " href="../php/logout.php">
+    <a class="nav-link text-white" href="../php/logout.php">
       
         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
           <i class="material-icons opacity-10">logout</i>
@@ -127,7 +127,7 @@
                 
               <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                 <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Halaman</a></li>
-                <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Laporan</li>
+                <li class="breadcrumb-item text-sm text-dark" aria-current="page">Laporan</li>
               </ol>
               <h6 class="font-weight-bolder mb-0">Laporan Transaksi</h6>
                 
@@ -158,6 +158,43 @@
         </nav>
         
         <!-- End Navbar -->
+
+        <nav class="second-navbar" data-bs-scroll="true">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-10">
+                <div class="second-navbar-title d-flex align-items-center">
+                  <button id="toggleButton" class="btn btn-primary">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <h2 class="text-white navbar-title">Laporan Transaksi</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <!-- Script Toggle Desktop -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <script>
+        let contentVisible = true; // Menyatakan bahwa sidenav awalnya terlihat
+        
+        $("#toggleButton").click(function() {
+          var sidenav = $("#sidenav-main");
+          var content = $(".main-content"); // Ganti dengan selector yang sesuai dengan elemen konten utama Anda
+        
+          if (contentVisible) {
+            sidenav.hide(); // Sembunyikan sidenav
+            content.css("margin-left", "0"); // Mengatur margin kiri konten ke 0 saat sidebar disembunyikan
+          } else {
+            sidenav.show(); // Tampilkan sidenav
+            content.css("margin-left", "280px"); // Mengatur margin kiri konten sesuai lebar sidebar
+          }
+          contentVisible = !contentVisible;
+        });
+        </script>
+        <!-- End of Script Toggle Desktop -->
 
   <!-- Content -->
     <div class="card-body px-0 pb-2">
@@ -317,6 +354,7 @@
   </main>
   <!-- End Content -->
   <!--   Core JS Files   -->
+  <script src="script.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
@@ -334,6 +372,22 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
-</body>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuItems = document.querySelectorAll(".nav-link");
+  
+      menuItems.forEach(function (menuItem) {
+        menuItem.addEventListener("click", function () {
+          // Hapus class "active" dari semua menu
+          menuItems.forEach(function (item) {
+            item.classList.remove("active");
+          });
+  
+          // Tambahkan class "active" ke menu yang dipilih
+          menuItem.classList.add("active");
+        });
+      });
+    });
+  </script>
+  </body>
 </html>

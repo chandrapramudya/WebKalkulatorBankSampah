@@ -27651,9 +27651,15 @@ pre[class*="language-"] {
   border-radius: 15px;
 }
 
+.navbar-title{
+  margin-left: 10px;
+  margin-bottom: 12px;
+}
+
 .second-navbar-title{
   margin-left: 90px;
 }
+
 
 #strip-divider{
   margin-left: -5px;
@@ -27809,7 +27815,7 @@ input[type="number"] {
   }
 
   .second-navbar{
-    display: flex;
+    display: none;
   }
 
   .second-navbar-title{
@@ -27870,6 +27876,10 @@ input[type="number"] {
 
   #iconNavbarSidenav{
     margin-right: 10px;
+  }
+
+    .second-navbar{
+    display: none;
   }
 }
 

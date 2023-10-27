@@ -27,7 +27,7 @@
 <link rel="icon" type="image/png" href="./assets/img/logobanksampah.png">
 
 <title>  
-   Bank Sampah
+   Kalkulator
 </title>
 
 <!--     Fonts and icons     -->
@@ -69,8 +69,8 @@
   <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
     <ul class="navbar-nav">
 <li class="nav-item">
-  <a class="nav-link text-white " href="./index.html">
-    
+  <a class="nav-link text-white active" href="./index.html">
+
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">calculate</i>
       </div>
@@ -87,7 +87,7 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link text-white " href="./pages/laporan_transaksi.html">
+  <a class="nav-link text-white" href="./pages/laporan_transaksi.html">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">equalizer</i>
@@ -98,7 +98,7 @@
 </li>
   
 <li class="nav-item">
-  <a class="nav-link text-white " href="#">
+  <a class="nav-link text-white" href="./pages/laporan_kategori.html">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">equalizer</i>
@@ -109,7 +109,7 @@
 </li>
   
 <li class="nav-item">
-  <a class="nav-link text-white " href="#">
+  <a class="nav-link text-white" href="./pages/laporan_subkategori.html">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">equalizer</i>
@@ -122,7 +122,7 @@
 <hr class="horizontal light mt-0 mb-2">
 
 <li class="nav-item">
-  <a class="nav-link text-white " href="./php/logout.php">
+  <a class="nav-link text-white" href="./php/logout.php">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">logout</i>
@@ -142,7 +142,7 @@
         
       <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Halaman</a></li>
-        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Kalkulator</li>
+        <li class="breadcrumb-item text-sm text-dark" aria-current="page">Kalkulator</li>
       </ol>
       <h6 class="font-weight-bolder mb-0">Kalkulator</h6>
         
@@ -178,13 +178,38 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-10">
-        <div class="second-navbar-title">
-          <h3 class="text-white">Kalkulator</h3>
+        <div class="second-navbar-title d-flex align-items-center">
+          <button id="toggleButton" class="btn btn-primary">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h2 class="text-white navbar-title">Kalkulator</h2>
         </div>
       </div>
     </div>
   </div>
 </nav>
+
+<!-- Script Toggle Desktop -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+let contentVisible = true; // Menyatakan bahwa sidenav awalnya terlihat
+
+$("#toggleButton").click(function() {
+  var sidenav = $("#sidenav-main");
+  var content = $(".main-content"); // Ganti dengan selector yang sesuai dengan elemen konten utama Anda
+
+  if (contentVisible) {
+    sidenav.hide(); // Sembunyikan sidenav
+    content.css("margin-left", "0"); // Mengatur margin kiri konten ke 0 saat sidebar disembunyikan
+  } else {
+    sidenav.show(); // Tampilkan sidenav
+    content.css("margin-left", "280px"); // Mengatur margin kiri konten sesuai lebar sidebar
+  }
+  contentVisible = !contentVisible;
+});
+</script>
+<!-- End of Script Toggle Desktop -->
 
 <!-- Content -->
 <form>
@@ -372,7 +397,6 @@
 <script src="./assets/js/core/popper.min.js" ></script>
 <script src="./assets/js/core/bootstrap.min.js" ></script>
 <!-- Bootstrap JavaScript -->
-<!-- Bootstrap JavaScript -->
 <script src="./assets/js/plugins/perfect-scrollbar.min.js" ></script>
 <script src="./assets/js/plugins/smooth-scrollbar.min.js" ></script>
 <script>
@@ -390,6 +414,6 @@
 
 
 <!-- Control  nter for Material Dashboard: parallax effects, scripts for the example pages etc --><script src="./assets/js/material-dashboard.min.js?v=3.1.0"></script>
-  </body>
 
+  </body>
 </html>
